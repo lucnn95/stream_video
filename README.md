@@ -4,7 +4,7 @@
 * Cocoapods 1.11.3
 
 ### [Main Packages](#main-packages)
-* [`flutter_to_airplay`](https://pub.dev/packages/flutter_bloc)
+* [`flutter_to_airplay`](https://pub.dev/packages/flutter_to_airplay)
   * This package is used to wirelessly send the content from any Apple device to another device that is enabled with AirPlay or Apple TV.
   * Platforms: iOS / iPadOS
 * [`cast`](https://pub.dev/packages/cast): This package allows us to extend our Android app to direct its streaming video and audio to a TV or sound system.
