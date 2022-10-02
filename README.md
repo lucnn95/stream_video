@@ -1,16 +1,49 @@
-# stream_video
+### [Getting Started](#getting-started)
+* Flutter (Channel stable, 3.0.5)
+* Dart 2.17.6
+* Cocoapods 1.11.3
 
-A new Flutter project.
+### [Main Packages](#main-packages)
+* [`flutter_to_airplay`](https://pub.dev/packages/flutter_bloc)
+  * This package is used to wirelessly send the content from any Apple device to another device that is enabled with AirPlay or Apple TV.
+  * Platforms: iOS / iPadOS
+* [`cast`](https://pub.dev/packages/cast): This package allows us to extend our Android app to direct its streaming video and audio to a TV or sound system.
+  * Platform: Android
+* [`video_player`](https://pub.dev/packages/video_player): A package allows our app to play videos.
+  * Platforms: iOS, Android and Web
 
-## Getting Started
+### [Installation](#installation)
+* Add these packages to our package's pubspec.yaml file:
+```
+  flutter_to_airplay: ^2.0.2
+  cast: ^1.1.1
+  video_player: ^2.4.7
+```
+### [Usage](#usage)
+* Use this widget in order to discover the Apple devices that are enabled with AirPlay or Apple TV.
+```
+AirPlayRoutePickerView(
+    tintColor: #Colors,
+    activeTintColor: #Colors,
+    backgroundColor: #Colors,
+)
+```
 
-This project is a starting point for a Flutter application.
+* Use this widget to play videos on iOS/iPadOS devices.
+```
+FlutterAVPlayerView(
+    urlString: #videoUrl,
+),
+```
 
-A few resources to get you started if this is your first Flutter project:
+* Use this function in order to discover the Android devices.
+```
+CastDiscoveryService().search()
+```
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+* Use this widget to play videos on Android devices.
+```
+VideoPlayer(
+    controller: #VideoPlayerController
+)
+```
