@@ -1,7 +1,7 @@
 import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:stream_video/airplay/airplay.dart';
-import 'package:stream_video/chromecase/cast.dart';
+import 'package:stream_video/chromecast/cast.dart';
 
 const videoUrl =
     'https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerJoyrides.mp4';
