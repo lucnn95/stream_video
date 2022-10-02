@@ -47,3 +47,6 @@ VideoPlayer(
     controller: #VideoPlayerController
 )
 ```
+
+### [How it works](#howitworks)
+* [`Video`](https://drive.google.com/file/d/1diD1SpOaqyK2e0O4_NBEg5TzT1L_jhHD/view?usp=sharing)
